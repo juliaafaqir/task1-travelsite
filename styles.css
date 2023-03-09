@@ -81,3 +81,164 @@ body {
 .icons{
     width:5vw;
 }
+
+.top-footer{
+    padding:60px 0px;
+}
+
+.top-footer-columns{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.top-footer-title{
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    font-size: 18px;
+}
+
+.top-footer-title:before{
+    border-top: 3px solid #C7B0DD;
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 40px;
+}
+
+.top-footer-columns nav,.top-footer-columns div{
+    border-right: 1px solid #e6e6e6;
+    padding-left: 2vw;
+    width: 20vw;
+    flex-direction: column;
+}
+.top-footer-columns nav a{
+    color: #303030;
+    text-align: left;
+    padding-left: 0 !important;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.top-footer-columns div p{
+    color: #999999;
+    /* position: absolute;
+    left: 7.5%;
+    right: 75.9%;
+    top: 28.35%;
+    bottom: 64.94%; */
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 160%;
+}
+
+.top-footer-columns div img{
+    /* position: absolute;
+    left: 7.5%;
+    right: 86.25%;
+    top: 17.25%;
+    bottom: 74.84%; */
+}
+
+.bottom-footer{
+    background-color: #C7B0DD;
+    padding:30px 0px;
+
+}
+
+.bottom-footer-columns{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.bottom-footer-columns div{
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 2vw;
+    width: 20vw;
+    flex-direction: column;
+}
+ #separator{
+    max-width:80vw !important;
+ }
+
+ .bottom-bar{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .bottom-bar-left ul{
+    display: flex;
+    color: #FFFFFF;
+    font-size: 13px;
+    list-style: none;
+ }
+
+ .bottom-bar-left li{
+    padding: 0px 10px;
+ }
+
+ .bottom-bar-right ul{
+    display: flex;
+    color: #FFFFFF;
+    font-size: 13px;
+    list-style: none;
+
+ }
+
+ .bottom-bar-right li{
+    padding: 0px 10px;
+ }
+
+ .back-to-top-button{
+    border-radius: 80px;
+    cursor: pointer;
+    padding: 0px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 32px;
+    height: 32px;
+ }
+
+ .bottom-footer-title{
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    font-size: 14px;
+    color: white;
+}
+
+.footer-switchers a{
+    color: white;
+    text-decoration: none;
+}
+
+.call-center a{
+    color: white;
+    text-decoration: none;
+}
+
+.bottom-footer-columns div a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+#root > footer > section.bottom-footer > div > div.bottom-footer-columns > div.last-div > div > img:nth-child(1) {
+    margin-right: 10px;
+}
+
+.download-apps{
+    display: flex;
+    align-items: center;
+    border-right: none !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+    flex-direction: row !important;
+}
+
+.last-div{
+    border-right: none !important;
+
+}
