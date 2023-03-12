@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'colors';
 
+@media screen and (min-width:#{$desktop-width}) {
 body {
     margin: 0;
     margin-top: 0;
@@ -10,7 +11,7 @@ body {
 .main-container{
     max-width: 100%;
     margin: auto;
-    overflow: hidden;
+    overflow:hidden; 
 }
 
 .header{
@@ -93,14 +94,15 @@ body {
         border-right: 1px solid #e6e6e6;
         padding-left: 2vw;
         width: 20vw;
+        display: flex;
         flex-direction: column;
         a{
-            color: #303030;
+            color: $textcolor;
             text-align: left;
             padding-left: 0 !important;
             font-size: $fontsize-reg;
             font-family: $fontfamily;
-            
+            text-decoration: none;            
         }
     }
     div{
@@ -109,7 +111,7 @@ body {
         width: 20vw;
         flex-direction: column;
         p{
-            color: #999999;
+            color: #ffffff98;
             font-family: $fontfamily;
             font-style: normal;
             font-weight: 400;
@@ -123,6 +125,7 @@ body {
     margin-top: 0 !important;
     margin-bottom: 20px !important;
     font-size: $fontsize-large;
+    color: $textcolor;
 }
 
 .top-footer-title:before{
@@ -229,3 +232,10 @@ body {
     border-right: none !important;
 
 }
+
+}
+
+// ----------------------------------------------
+ @media screen and (max-width=#{$mobile-width}) {
+    
+ }
