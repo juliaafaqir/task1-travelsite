@@ -77,11 +77,15 @@ body {
   text-align: center;
   box-sizing: border-box;
   background: #FFFFFF;
-  padding: 10px;
+  padding: 20px;
   width: 30%;
 }
 .blog-card img {
   border-radius: 20px;
+  transition: all 0.5s ease;
+}
+.blog-card img:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .icons {
@@ -228,7 +232,7 @@ body {
   border-right: none !important;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 1240px) {
   #dropdown-icon {
     display: flex;
     width: 10px !important;
@@ -260,6 +264,7 @@ body {
   }
   .blogs {
     gap: 20px;
+    flex-direction: column;
   }
   .blog-card {
     padding: 10px;
@@ -267,6 +272,9 @@ body {
   }
   .blog-card img {
     border-radius: 20px;
+  }
+  .blog-card img:hover {
+    zoom: 20%;
   }
   .blog-card h3 {
     font-size: 14px;
