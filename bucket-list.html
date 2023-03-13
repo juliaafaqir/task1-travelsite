@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Roamers Rhapsody - Bucket List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/icons/favicon.png">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <!-- onload="chooseTheme()" -->
+        <header>
+            <section class="main-container">
+                <div class="header">
+                  <nav class="nav-bar">
+                      <div class="main-menu">
+                        <img id="dropdown-icon" alt="menu dropdown icon" src="assets/icons/white-menu.png"></img>
+                        <img alt="Logo" src="assets/images/logo.png"></img>
+                        <a href="">Destinations</a>
+                        <a href="">Travel Tips</a>
+                        <a href="">Blogs</a>
+                        <a href="">About us</a>
+                        <a href="bucket-list.html">Bucket-list</a>
+
+                      </div>
+                      <div class="nav-icons">
+                          <a href=""> <img alt="Logo" src="assets/icons/white-search.png"></img></a>
+                          <a href=""><img alt="Logo" src="assets/icons/white-user.png"></img></a>
+                          <a href=""><img alt="Logo" src="assets/icons/white-lang.png"></img></a>                    
+                      </div>
+                   </nav>
+                </div>
+            </section>
+
+        </header>
+
+        <!-- ------------------------------------- -->
+        <main>
+            <section>
+                <div class="form-container">
+                    <form>
+                        <h3>Add to your Bucket List:</h3>
+                        <div class="input-area">
+                            <label for="new-item">Add Bucket-list item</label>
+                            <input id="new-item" type="text"  placeholder="Enter a place or a goal" />
+                            <button id="submit-button" type="submit"> Add Item</button>
+                        </div>
+
+                    </form>
+                    <script>
+                        document.getElementById("submit-button").addEventListener("click", function(event){
+    event.preventDefault()
+  });
+                    </script>
+
+                    <div id="list-items">        
+                    <h3>My Bucket-list </h3>
+                        <ul id="incomplete-items">
+                        </ul>
+                    </div>
+
+                    <div id="list-items">        
+                        <h3>Things I've Done </h3>
+                            <ul id="complete-items">
+                            </ul>
+                        </div>
+
+                </div>
+            </section>
+
+    </main>
+
+    <footer>
+        <section class='top-footer'>
+            <div class='container'>
+                <div class='top-footer-columns'>
+                    <div>
+                        <img src="assets/images/logo.png" alt="Travelsite Logo" width="220px"></img>
+                        <p>Copyrights © 2021 All rights reserved.
+                        Roamers Rhapsody</p>
+                    </div>
+                    <nav>
+                      <h5 class='top-footer-title'>Destinations</h5>
+                      <a href="">Europe</a>
+                      <a href="">Middle East</a>
+                      <a href="">Fareast</a>
+                      <a href="">USA</a>
+                    </nav>
+    
+                    <nav>
+                      <h5 class='top-footer-title'>Blogs</h5>
+                      <a href="">See & Do</a>
+                      <a href="">Plan Your Trip</a>
+                      <a href="">Travel Essentials</a>
+                      <a href="">Apply for an e-Visa</a>
+                    </nav>
+    
+                    <nav class='last-div'>
+                      <h5 class='top-footer-title'>Useful Information</h5>
+                      <a href="">About Roamers Rhapsody</a>
+                      <a href="">Safety Travel Tips</a>
+                      <a href="">Useful Contacts</a>
+                      <a href="">Advisory on COVID-19</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    
+        <section class='bottom-footer'>
+          <div class='container'>
+            <div class='bottom-footer-columns'>
+              <div>
+                <h6 class='bottom-footer-title'>Powered By</h6>
+                <img alt="Julia" src="assets/icons/favicon.png" style="width:50px"></img>
+              </div>
+              <div>
+                <h5 class='bottom-footer-title'>Preferences</h5>
+                <a style="text-decoration:none; color:white" rel="stylesheet" href="/">
+                    <img alt="globe icon" src="assets/icons/globe.png" width="10px"></img>English  
+                    <img alt="arrow down icon" src="assets/icons/arrow-down.png"></img>
+                </a> 
+              </div>
+              <div class='call-center'>
+                <h5 class='bottom-footer-title'>Call Center</h5>
+                <a href="">Contact us here</a>
+              </div>
+    
+              <div class='last-div'>
+              <h5 class='bottom-footer-title'>Download our mobile app</h5>
+              <div class='download-apps'>
+              <img alt="App Store icon" src="assets/images/app-store.png"></img>
+              <img alt="Google Play icon" src="assets/images/google-play.png"></img>
+              </div>
+              </div>
+            </div>
+          
+          <img id="separator" alt="separator" src="assets/images/separator.png"></img>
+         
+          <div class='bottom-bar'>
+            <div class='bottom-bar-left'>
+              <ul>
+                <li>Contact Us</li>
+                <li>Privacy Policy</li>
+                <li>Cookies</li>
+                <li>Terms and Conditions</li>
+              </ul>
+            </div>
+            <div class='bottom-bar-right'>
+            <ul>
+                <li>Connect with us</li>
+                <li><img alt="FB icon" src="assets/images/facebook-icon.png"></img></li>
+                <li><img alt="IG icon" src="assets/images/instagram-icon.png"></img></li>
+                <li><img alt="Twitter icon" src="assets/images/twitter-icon.png"></img></li>
+                <li><img alt="Youtube icon" src="assets/images/youtube-icon.png"></img></li>
+                <li>Back to top</li>
+                <li><a href="#top"><button className='back-to-top-button'><img alt="Youtube icon" src="assets/icons/arrow-up.png"></img></button></a></li>
+    
+              </ul>
+            </div>
+          </div>
+          </div>
+        </section>
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
