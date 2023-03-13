@@ -498,11 +498,10 @@ p > button:hover {
   color: #72647f;
 }
 
-/* Task list */
+/* Item list */
 li {
   overflow: hidden;
   padding: 20px 0;
-  border-bottom: 1px solid #eee;
 }
 
 li > input[type=checkbox] {
