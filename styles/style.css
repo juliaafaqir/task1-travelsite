@@ -9,7 +9,7 @@ body {
   font-family: "Tilt Neon", sans-serif;
 }
 
-.main-container {
+.banner-section {
   max-width: 100%;
   margin: auto;
   overflow: hidden;
@@ -87,9 +87,54 @@ body {
 .blog-card img:hover {
   transform: scale(1.1, 1.1);
 }
+.blog-card h3 {
+  border-bottom: none;
+}
+
+.blog-img {
+  width: 320px;
+  height: 200px;
+}
 
 .icons {
   width: 5vw;
+}
+
+.banner-section {
+  background-image: url("../assets/images/travel-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.banner-container {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 70px 0;
+  display: flex;
+}
+.banner-container h4, .banner-container h2, .banner-container p {
+  color: white;
+}
+.banner-container div {
+  width: 60%;
+}
+
+.banner-articles {
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  padding: 20px;
+}
+.banner-articles a {
+  color: black;
+  display: flex;
+}
+.banner-articles a h3 {
+  color: black;
+}
+.banner-articles a img {
+  width: 100px;
 }
 
 .top-footer {
@@ -230,6 +275,10 @@ body {
 
 .last-div {
   border-right: none !important;
+}
+
+hr {
+  border-color: rgba(216, 216, 216, 0.6431372549);
 }
 
 @media screen and (max-width: 1240px) {
@@ -456,7 +505,7 @@ button:hover {
 
 /* Heading */
 h3,
-label[for=new-task] {
+label[for=new-item] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -483,13 +532,13 @@ input[type=text]:focus {
   color: #333;
 }
 
-/* New Task */
-label[for=new-task] {
+/* New Item */
+label[for=new-item] {
   display: block;
   margin: 0 0 20px;
 }
 
-input#new-task {
+input#new-item {
   float: left;
   width: 318px;
 }
@@ -526,12 +575,12 @@ li > .delete:hover {
 }
 
 /* Completed */
-#completed-tasks label {
+#complete-items label {
   text-decoration: line-through;
   color: #888;
 }
 
-/* Edit Task */
+/* Edit Item */
 ul li input[type=text] {
   display: none;
 }

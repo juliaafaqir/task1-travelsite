@@ -18,7 +18,7 @@
                   <nav class="nav-bar">
                       <div class="main-menu">
                         <img id="dropdown-icon" alt="menu dropdown icon" src="assets/icons/white-menu.png"></img>
-                        <img alt="Logo" src="assets/images/logo.png"></img>
+                        <a href="index.html"><img alt="Logo" src="assets/images/logo.png"></img></a>
                         <a href="">Destinations</a>
                         <a href="">Travel Tips</a>
                         <a href="">Blogs</a>
@@ -41,32 +41,17 @@
         <main>
             <section>
                 <div class="form-container">
-                    <form>
+                    <form id="form">
                         <h3>Add to your Bucket List:</h3>
                         <div class="input-area">
                             <label for="new-item">Add Bucket-list item</label>
-                            <input id="new-item" type="text"  placeholder="Enter a place or a goal" />
-                            <button id="submit-button" type="submit"> Add Item</button>
+                            <input id="newItem" type="text"  placeholder="Enter a place or a goal" />
+                            <button type="submit">Add Item</button>                
                         </div>
-
                     </form>
-                    <script>
-                        document.getElementById("submit-button").addEventListener("click", function(event){
-    event.preventDefault()
-  });
-                    </script>
 
                     <div id="list-items">        
-                    <h3>My Bucket-list </h3>
-                        <ul id="incomplete-items">
-                        </ul>
                     </div>
-
-                    <div id="list-items">        
-                        <h3>Things I've Done </h3>
-                            <ul id="complete-items">
-                            </ul>
-                        </div>
 
                 </div>
             </section>
@@ -136,8 +121,7 @@
               </div>
               </div>
             </div>
-          <hr>
-                   
+          <hr>         
           <div class='bottom-bar'>
             <div class='bottom-bar-left'>
               <ul>
@@ -165,7 +149,7 @@
 
     </footer>
 
-    <script src="index.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
